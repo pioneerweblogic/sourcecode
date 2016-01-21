@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p>The time in London is <?php
+$now= new DateTime();
+$now->setTimezone(new DateTimeZone ('European/London'));
+echo $now->format ('g.i a');
+?>
+</p>
+</body>
+</html>
